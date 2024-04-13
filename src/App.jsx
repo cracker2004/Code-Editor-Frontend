@@ -8,8 +8,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/auth" element={<Auth />} />
-          <Route path="/room/:roomId" element={<Room />} /> */}
         </Routes>
       </BrowserRouter>
     </>

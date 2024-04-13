@@ -1,9 +1,9 @@
 import React from "react";
 import { codeingLanguages } from "../Constants/constants";
 
-const LanguageIcons = ({ lang, setLang, setLangname}) => {
+const LanguageIcons = ({ language, setLanguage, setLangname}) => {
   const handleClick = (newLang, name) => {
-    setLang(newLang);
+    setLanguage(newLang);
     setLangname(name)
   };
 
@@ -14,7 +14,7 @@ const LanguageIcons = ({ lang, setLang, setLangname}) => {
           <div key={e.src} onClick={() => handleClick(e.type, e.name)}>
             <img
               className={`border rounded-sm w-8 h-8 object-contain m-2 mt-0 p-1.5 cursor-pointer active:invisible ${
-                lang === e.type && `border-purple-700 border-2`
+                language === e.type && `border-purple-700 border-2`
               }`}
               src={e.src}
               alt=""

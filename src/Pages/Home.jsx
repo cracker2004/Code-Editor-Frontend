@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import axios from "axios";
 import "../App.css";
 import Header from "../Components/HomePage Components/Header";
 import MainEditor from "../Components/HomePage Components/MainEditor";
